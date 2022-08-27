@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+bofdy
+{
+    width: 100%;
+    height: 100vh;
+}
+:root{
+    --primaryColor:#007bff;
+    --secondaryColor:#343a40;
+    --fontSizeBig:23px;
+    --fontSizeSmall:16px;
+    --letterSpacing:2px;
+    --translate:translateY(-15px);
+    /* --boxShadow:0  */
+}
+.navbar-brand
+{
+    font-weight: 700;
+    color:var(--primaryColor);
+    letter-spacing: var(--letterSpacing);
+    font-size: var(--fontSizeBig);
+}
+.nav-link
+{
+    font-size: var(--fontSizeSmall);
+    font-weight: 500;
+    letter-spacing:var(--letterSpacing);
+    color:var(--secondaryColor)!important;
+
+}
+.btn
+{
+    /* border: none; */
+    border-radius: 2px;
+}
+::-webkit-scrollbar
+{
+    display: none;
+}
+/* heroSecion */
+.heroSection
+{
+    position: absolute;
+    top:50%;
+    left:40%;
+    transform: translate(-40%,-50%);
+    text-align: center; 
+
+
+   
+}
+.heroImage
+{
+    background-image: linear-gradient(to right, rgba(15, 15, 15, 0.883),rgba(44, 44, 47, 0.5)),url(../Images/henrique-s-ruzzon-u1vOLCULaik-unsplash.jpg);
+    width: 100%;
+    height: 100vh;  
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.title
+{
+    font-weight: bold;
+}
+/* heroSecion */
+
+/* services Section */
+.servicesSection{
+    padding: 100px;
+}
+.serviceOne
+{
+    background:rgb(255, 255, 255);
+    border-radius: 3px;
+width: 100%;
+height: 100%;
+padding: 30px;
+transition: 0.3s all ease;
+}
+.serviceOne:hover{
+    transform: var(--translate);
+}
+.fa
+{
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.iconBox
+{
+    
+    background:var(--primaryColor);
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+
+}
+/* services Section */
+
+/* aboutSection */
+.aboutDetails
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+    
+
+
+}
+/* aboutSection */
+.cardy
+{
+    transition:0.3s all ease;
+    border-radius: 4px;
+}
+.cardy:hover{
+    transform:var(--translate);
+    cursor: pointer;
+}
+/* footer */
+.footer
+{
+    font-weight: 700;
+    /* color:var(--primaryColor);/ */
+    letter-spacing: var(--letterSpacing);
+    font-size: var(--fontSizeBig);
+
+}
+.link {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 4px
+}
+.link a{
+    color:#fff;
+    
+}
+.footerSection
+{
+    
+    background-image: linear-gradient(to right, rgb(2, 2, 2),rgba(7, 7, 7, 0.856)),url(../Images/henrique-s-ruzzon-u1vOLCULaik-unsplash.jpg);
+    width: 100%;
+    /* height: 100vh;   */
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    color:#fff;
+    object-fit: cover;
+    
+}
